@@ -4,7 +4,7 @@ import RecentItem from "./RecentItem";
 const NewsLetter = () => {
   return (
     <>
-      <div className="bg-[color:var(--background-sandcolor)] w-full h-full ">
+      <div className="bg-[color:var(--background-sandcolor)] w-full h-full relative">
         <h2 className="text-[color:var(--secondary-color)] ml-6 pt-6 font-bold text-2xl border-solid border-b-2 border-[color:var(--secondary-color)] h-fit w-fit">
           News Letter
         </h2>
@@ -19,7 +19,9 @@ const NewsLetter = () => {
           </button>
         </div>
         <RecentItem />
-        <FollowComp/>
+        <div className="relative bottom-0">
+          <FollowComp />
+        </div>
       </div>
     </>
   );
